@@ -40,13 +40,29 @@ body {
   background-color: #121212;
   border: 2px solid #000;
   box-shadow: inset 0px 0px 20px 4px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.play {
   background-image: url(icon.svg);
   background-repeat: no-repeat;
   display: grid;
   background-position: center;
   background-size: 1.3rem;
   background-position-x: 58%;
-  cursor: pointer;
+}
+
+.pause {
+  background-image: url(pause.svg);
+  background-repeat: no-repeat;
+  display: grid;
+  background-position: center;
+  background-size: 1rem;
+  /* background-position-x: 58%; */
+}
+
+.play.stop {
+  background-image: none;
 }
 
 .timer-display button:hover {
